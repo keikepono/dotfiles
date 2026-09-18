@@ -1,0 +1,6 @@
+brew "neovim"
+brew "ripgrep"
+brew "node"
+brew "tmux"
+brew "tree-sitter-cli"
+cask "wezterm"
