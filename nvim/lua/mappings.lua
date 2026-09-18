@@ -10,4 +10,7 @@ map("i", "jk", "<ESC>")
 map("n", "K", vim.lsp.buf.hover, { desc = "LSP hover" })
 map({ "n", "i" }, "<C-k>", vim.lsp.buf.signature_help, { desc = "LSP signature help" })
 
+map("n", "<leader>gd", "<cmd>DiffviewOpen<CR>", { desc = "Diffview open" })
+map("n", "<leader>gq", "<cmd>DiffviewClose<CR>", { desc = "Diffview close" })
+
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
