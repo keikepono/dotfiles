@@ -7,3 +7,11 @@ vim.api.nvim_create_autocmd("InsertLeave", {
     end
   end,
 })
+
+vim.api.nvim_create_autocmd("User", {
+  pattern = "DiffviewDiffBufRead",
+  callback = function()
+    vim.opt_local.scrollbind = true
+    vim.opt_local.cursorbind = true
+  end,
+})
