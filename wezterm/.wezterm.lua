@@ -13,6 +13,9 @@ config.color_scheme = 'rose-pine-moon'
 
 config.enable_tab_bar = false
 
+-- Start every window inside tmux (attach to "main", or create it)
+config.default_prog = { "/bin/zsh", "-l", "-c", "tmux new -A -s main" }
+
 config.window_decorations = "RESIZE"
 config.window_background_opacity = 0.8
 config.macos_window_background_blur = 10
