@@ -14,24 +14,6 @@ return {
   },
 
   {
-    "nvim-tree/nvim-tree.lua",
-    opts = {
-      filters = {
-        custom = { "\\.js$" },
-      },
-    },
-  },
-
-  {
-    "nvim-telescope/telescope.nvim",
-    opts = {
-      defaults = {
-        file_ignore_patterns = { "%.js$" },
-      },
-    },
-  },
-
-  {
     "sindrets/diffview.nvim",
     cmd = { "DiffviewOpen", "DiffviewFileHistory" },
   },
