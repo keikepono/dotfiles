@@ -13,8 +13,9 @@ config.color_scheme = 'rose-pine-moon'
 
 config.enable_tab_bar = false
 
--- Start every window inside tmux (attach to "main", or create it)
-config.default_prog = { "/bin/zsh", "-l", "-c", "tmux new -A -s main" }
+-- Start every window inside tmux (attach to "main", or create it).
+-- Fall back to a login shell when tmux detaches/exits so the window stays open.
+config.default_prog = { "/bin/zsh", "-l", "-c", "tmux new -A -s main; exec zsh -l" }
 
 config.window_decorations = "RESIZE"
 config.window_background_opacity = 0.8
